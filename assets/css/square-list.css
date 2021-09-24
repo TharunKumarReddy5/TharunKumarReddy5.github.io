@@ -1,0 +1,46 @@
+.square-list{
+    list-style-type: square;
+}
+
+button {
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    font: 24px "Margarine", sans-serif;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    letter-spacing: 2px;
+}
+
+.button-rainbow button {
+    animation: rainbow 5s infinite, heartbeat 1s infinite;
+    background: #42A8C0;
+}
+
+.button-know-more button {
+    font: 24px "Margarine", sans-serif;
+    background: #42A8C0;
+}
+
+.button-rainbow button:hover .rainbow {
+    opacity: 1;
+    animation: rotate-nonstop 0.2s infinite;
+}
+
+@keyframes rainbow {
+    20% {
+        background: #3498db;
+    }
+    40% {
+        background: #1abc9c;
+    }
+    80% {
+        background: #9b59b6;
+    }
+}
+
+
